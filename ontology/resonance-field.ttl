@@ -1,2 +1,9 @@
-@prefix : <http://fractality.org/ontology#> .
-...
+@prefix : <http://example.org/resonance#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:ResonanceField a owl:Class ;
+    :binding_strength "0.92"^^xsd:float ;
+    :influences :Node .
+
+:Node a owl:Class ;
+    :phase_locked true .

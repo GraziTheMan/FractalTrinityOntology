@@ -1,2 +1,13 @@
-@prefix : <http://fractality.org/ontology#> .
-...
+@prefix : <http://example.org/fractality#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ConsciousObserver a owl:Class ;
+    rdfs:subClassOf :Observer ;
+    :phi_value "3.0"^^xsd:float ;
+    :hasQuale :RedQuale .
+
+:RedQuale a :ColorQuale ;
+    :hue "0"^^xsd:float ;
+    :saturation "1.0"^^xsd:float ;
+    :brightness "0.8"^^xsd:float .

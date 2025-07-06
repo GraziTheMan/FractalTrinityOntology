@@ -1,2 +1,6 @@
-@prefix : <http://fractality.org/ontology#> .
-...
+@prefix : <http://example.org/fractiverse#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+:Node a owl:Class ;
+    :hasActivationScore "0.7"^^xsd:float ;
+    :hasSimilarity "0.85"^^xsd:float .
